@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../public/css/main.css'
+import '../../public/css/main.css';
 import * as actions from '../actions';
 import {connect} from 'react-redux';
 import { browserHistory } from 'react-router';
@@ -26,7 +26,7 @@ export class CardChooser extends React.Component {
       const formData = {
         username: this.props.username,
         cards: filteredCards
-      }
+    }
       this.props.dispatch(actions.addUserCards(formData));
       const path = '/';
       browserHistory.push(path);
@@ -52,7 +52,7 @@ function mapStateToProps(state, props) {
     return {
       cards: state.cards,
       username: state.username,
-    }
+  }
 }
 
 export default connect(mapStateToProps)(CardChooser);

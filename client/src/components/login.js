@@ -33,7 +33,7 @@ export class Login extends React.Component {
           <button type='submit' className='btn submit-btn'>Submit</button>
         </form>
       </div>
-    )
+  )
   }
 }
 

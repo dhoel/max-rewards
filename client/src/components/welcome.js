@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../public/css/main.css'
+import '../../public/css/main.css';
 import { Link } from 'react-router';
 
 export default function Welcome (props) {
